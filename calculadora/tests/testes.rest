@@ -1,0 +1,35 @@
+###
+POST http://localhost:40000/soma HTTP/1.1
+content-type: application/json
+
+{
+"num1": 4,
+"num2": 2
+}
+
+###
+POST http://localhost:40000/sub HTTP/1.1
+content-type: application/json
+
+{
+"num1": 4,
+"num2": 2
+}
+
+###
+POST http://localhost:40000/mult HTTP/1.1
+content-type: application/json
+
+{
+"num1": 4,
+"num2": 2
+}
+
+###
+POST http://localhost:40000/div HTTP/1.1
+content-type: application/json
+
+{
+"num1": 4,
+"num2": 2
+}

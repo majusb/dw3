@@ -1,0 +1,26 @@
+const soma = (request, res) => (async () =>{
+const somaNumeros = request.body.num1 + request.body.num2
+res.json({ "somaNumeros" : somaNumeros });
+} )();
+
+const sub = (request, res) => (async () =>{
+const subNumeros = request.body.num1 - request.body.num2
+res.json({ "subNumeros" : subNumeros });
+} )();
+
+const mult = (request, res) => (async () =>{
+const multNumeros = request.body.num1 * request.body.num2
+res.json({ "multNumeros" : multNumeros });
+} )();
+
+const div = (request, res) => (async () =>{
+const divNumeros = request.body.num1 / request.body.num2
+res.json({  "divNumeros" : divNumeros });
+} )();
+
+module.exports = {
+    soma,
+    sub,
+    mult,
+    div,
+}
